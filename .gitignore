@@ -1,4 +1,42 @@
+# Ignore build artifacts
 target/
+
+# Ignore environment variable file
 .env
+
+# Ignore compiled binaries (e.g., for release builds)
 *.rs.bk
+*.exe
+*.out
+*.app
+*.dSYM/
+
+# Ignore dependency directories
+**/target/
+
+# Ignore Cargo.lock to avoid committing lock file in libraries (optional, but recommended)
 Cargo.lock
+
+# Ignore editor-specific files (e.g., VS Code, IntelliJ)
+.vscode/
+.idea/
+
+# Ignore backup files
+*.bak
+*.swp
+
+# Ignore generated documentation files
+/doc/
+
+# Ignore OS-specific files (e.g., macOS, Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore log files
+*.log
+
+# Ignore node_modules if you're using Rust with a JS front-end or Node.js
+node_modules/
+
+# Ignore generated coverage reports
+/coverage/
